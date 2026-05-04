@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export default function App() {
   const [array, setArray] = useState([64, 25, 12, 22, 11, 90, 34, 50]);
@@ -138,6 +139,7 @@ export default function App() {
           );
         })}
       </div>
+      <SpeedInsights />
     </div>
   );
 }
